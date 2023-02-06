@@ -23,7 +23,7 @@ roslaunch robutler_navigation move_base.launch
   src="/images/Screenshot from 2023-02-06 21-50-35.png"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 100px">
 To make the robot go to different divisions and take photo, run:
 ```
 pathfile/follow_the_route.py
