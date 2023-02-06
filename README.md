@@ -1,5 +1,5 @@
 # Trabalho3
-Robutler
+Robutler - Robô com perceção de objetos e navegação autónoma  pelo cenário.
 Created by: Jorge Silva
 
 # Commands
