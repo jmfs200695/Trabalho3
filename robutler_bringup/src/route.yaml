@@ -1,0 +1,6 @@
+- {filename: 'quartogrande.png', position: { x: -7.0, y: 5}, quaternion: {r1: 0, r2: 0, r3: -0.628, r4: 0.778}}
+- {filename: 'quartopequeno1.png', position: { x: -3, y: 5}, quaternion: {r1: 0, r2: 0, r3: 0.936, r4: 0.353}}
+- {filename: 'quartopequeno2.png', position: { x: 0, y: 5}, quaternion: {r1: 0, r2: 0, r3: 0.904, r4: -0.427}}
+- {filename: 'casadebanho.png', position: { x: 0.5, y: 1}, quaternion: {r1: 0, r2: 0, r3: 0.904, r4: -0.427}}
+- {filename: 'cozinha.png', position: { x: -2, y: 1}, quaternion: {r1: 0, r2: 0, r3: 0.904, r4: -0.427}}
+- {filename: 'inicio.png', position: { x: -5, y: 1}, quaternion: {r1: 0, r2: 0, r3: 0.904, r4: -0.427}}

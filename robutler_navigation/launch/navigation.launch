@@ -1,0 +1,28 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="map_file" default="$(find robutler_navigation)/maps/map.yaml"/>
+  <arg name="open_rviz" default="true"/>
+  <arg name="move_forward_only" default="false"/>
+
+ <!-- Turtlebot3 -->
+  <include file="$(find robutler_bringup)/launch/robutler_remote.launch">
+    <arg name="model" value="$(arg model)" />
+  </include>
+
+
+  <!-- AMCL -->
+  <include file="$(find robutler_navigation)/launch/localization.launch"/>
+
+  <!-- move_base -->
+  <include file="$(find robutler_navigation)/launch/move_base.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="move_forward_only" value="$(arg move_forward_only)"/>
+  </include>
+
+  <!-- rviz -->
+  <group if="$(arg open_rviz)"> 
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find robutler_navigation)/rviz/robutler_navigation.rviz"/>
+  </group>
+</launch>
