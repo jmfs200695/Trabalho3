@@ -18,6 +18,7 @@ roslaunch robutler_navigation localization.launch
 To get global and local plan:
 ```
 roslaunch robutler_navigation move_base.launch
+![My Image](images/Screenshot from 2023-02-06 21-50-35.png)
 ```
 To make the robot go to different divisions and take photo, run:
 ```
